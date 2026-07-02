@@ -1,0 +1,6 @@
+{"event":"card_reviewed","distinct_id":"profile_beginner","timestamp":"2026-06-30T09:12:00Z","properties":{"course":"japanese-103","item_kind":"flashcard","rating":3,"comprehensible_ratio":0.9,"new_concepts":1,"success_weight":0.66}}
+{"event":"card_reviewed","distinct_id":"profile_beginner","timestamp":"2026-06-30T09:13:20Z","properties":{"course":"japanese-103","item_kind":"flashcard","rating":1,"comprehensible_ratio":0.7,"new_concepts":3,"success_weight":-0.47}}
+{"event":"content_recommended","distinct_id":"profile_intermediate","timestamp":"2026-06-30T10:01:11Z","properties":{"course":"physics-201","top_item":"quiz-newton2","score":0.81,"ratio_target":0.9}}
+{"event":"comprehension_test_generated","distinct_id":"profile_advanced","timestamp":"2026-06-30T11:44:02Z","properties":{"concept":"lhopital","choices":4}}
+{"event":"ratio_experiment_exposure","distinct_id":"profile_intermediate","timestamp":"2026-06-30T12:30:00Z","properties":{"experiment":"comprehensible_ratio","variant":"0.88","feature_flag":true}}
+{"event":"anki_synced","distinct_id":"profile_beginner","timestamp":"2026-06-30T08:00:00Z","properties":{"deck":"Japanese::Core","cards_imported":3}}

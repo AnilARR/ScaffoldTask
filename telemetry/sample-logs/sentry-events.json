@@ -1,0 +1,33 @@
+[
+  {
+    "event_id": "a1b2c3d4e5f6470880a1b2c3d4e5f608",
+    "timestamp": "2026-06-30T14:22:11Z",
+    "level": "error",
+    "logger": "scaffold-api::engine",
+    "transaction": "POST /api/review",
+    "message": "freshness upsert failed: connection reset by peer",
+    "tags": { "environment": "staging", "profile_level": "intermediate" },
+    "exception": {
+      "type": "RepoError",
+      "value": "store error: connection reset by peer"
+    }
+  },
+  {
+    "event_id": "f7e6d5c4b3a2410099887766554433aa",
+    "timestamp": "2026-06-30T15:03:47Z",
+    "level": "warning",
+    "logger": "scaffold-api::services::anki",
+    "transaction": "GET /api/anki/decks",
+    "message": "anki transport error: connection refused (AnkiConnect not running)",
+    "tags": { "environment": "production", "integration": "ankiconnect" }
+  },
+  {
+    "event_id": "0011223344556677889900aabbccddee",
+    "timestamp": "2026-06-30T16:41:09Z",
+    "level": "info",
+    "logger": "scaffold-api::services::ai",
+    "transaction": "POST /api/generate-test",
+    "message": "ai grading latency exceeded soft budget (1240ms > 1000ms)",
+    "tags": { "environment": "production", "model": "gpt-4o-mini" }
+  }
+]

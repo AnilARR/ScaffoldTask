@@ -1,0 +1,21 @@
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock
+
+# Node
+node_modules
+dist
+.vite
+
+# Env / captured telemetry
+.env
+telemetry/captured/
+
+# Editor / OS
+.DS_Store
+*.log
+
+# The prebuilt runner artifact in this workspace (not part of the app)
+openscaffold.exe
+openscaffold-transcript-*.jsonl

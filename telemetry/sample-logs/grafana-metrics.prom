@@ -1,0 +1,29 @@
+# Sample Prometheus scrape (mocked) — consumed by Grafana dashboards.
+# HELP scaffold_reviews_total Total number of card/quiz reviews processed.
+# TYPE scaffold_reviews_total counter
+scaffold_reviews_total{course="japanese-103",level="beginner"} 128
+scaffold_reviews_total{course="physics-201",level="intermediate"} 214
+scaffold_reviews_total{course="physics-201",level="advanced"} 341
+
+# HELP scaffold_freshness_avg Average freshness (retrievability) per profile.
+# TYPE scaffold_freshness_avg gauge
+scaffold_freshness_avg{level="beginner"} 0.31
+scaffold_freshness_avg{level="intermediate"} 0.58
+scaffold_freshness_avg{level="advanced"} 0.86
+
+# HELP scaffold_recommend_latency_seconds N+1 selection latency.
+# TYPE scaffold_recommend_latency_seconds histogram
+scaffold_recommend_latency_seconds_bucket{le="0.005"} 940
+scaffold_recommend_latency_seconds_bucket{le="0.01"} 988
+scaffold_recommend_latency_seconds_bucket{le="0.05"} 999
+scaffold_recommend_latency_seconds_bucket{le="+Inf"} 1000
+scaffold_recommend_latency_seconds_sum 3.42
+scaffold_recommend_latency_seconds_count 1000
+
+# HELP scaffold_up Service liveness.
+# TYPE scaffold_up gauge
+scaffold_up 1
+
+# HELP scaffold_ai_grade_latency_seconds AI complexity grading latency.
+# TYPE scaffold_ai_grade_latency_seconds gauge
+scaffold_ai_grade_latency_seconds 1.24
