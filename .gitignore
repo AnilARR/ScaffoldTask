@@ -19,3 +19,4 @@ telemetry/captured/
 # The prebuilt runner artifact in this workspace (not part of the app)
 openscaffold.exe
 openscaffold-transcript-*.jsonl
+prompt.txt 
